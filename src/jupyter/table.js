@@ -1,4 +1,5 @@
-(function ($, util) {
+(function ($, util, options) {
+    const option = 'jp-tables';
     const tags = ['tr', 'th', 'td'];
 
     var replacement = {};
@@ -39,6 +40,10 @@
     }
 
     $(function () {
-        setInterval(formatTables, 1000);
+        options.get([option], function (result) {
+            if (!result[option])
+                return;
+            setInterval(formatTables, 1000);
+        });
     });
-})(jQuery, window.enhancedGithubUtil);
+})(jQuery, window.enhancedGithubUtil, chrome.storage.sync);

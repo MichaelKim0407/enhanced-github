@@ -1,0 +1,14 @@
+div.container {
+    max-width: 1020px;
+    margin: auto;
+}
+
+div.panel {
+    border: darkgray 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+div.panel h1 {
+    border-bottom: gray 1px dashed;
+}
