@@ -10,6 +10,18 @@
             "js": [
                 "lib/jquery-3.3.1/jquery.min.js"
             ]
+        },
+        {
+            "matches": [
+                "https://render.githubusercontent.com/view/ipynb",
+                "https://render.githubusercontent.com/view/ipynb?*"
+            ],
+            "all_frames": true,
+            "js": [
+                "lib/jquery-3.3.1/jquery.min.js",
+                "util.js",
+                "jupyter/table.js"
+            ]
         }
     ]
 }
