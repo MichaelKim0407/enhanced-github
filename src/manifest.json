@@ -9,10 +9,12 @@
     "content_scripts": [
         {
             "matches": [
-                "https://github.com/*"
+                "https://github.com/*.ipynb"
             ],
             "js": [
-                "lib/jquery-3.3.1/jquery.min.js"
+                "lib/jquery-3.3.1/jquery.min.js",
+                "util.js",
+                "jupyter/btn.js"
             ]
         },
         {

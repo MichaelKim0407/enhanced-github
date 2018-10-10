@@ -1,8 +1,20 @@
-(function (window) {
+(function (window, options) {
     if (window.enhancedGithubUtil)
         return;
 
     window.enhancedGithubUtil = {};
+
+    (function (util) {
+        function withOption(option, callback) {
+            options.get([option], function (result) {
+                if (!result[option])
+                    return;
+                callback();
+            });
+        }
+
+        util.withOption = withOption;
+    })(window.enhancedGithubUtil);
 
     (function (util) {
         function replace(s, from, to) {
@@ -32,4 +44,4 @@
         };
     })(window.enhancedGithubUtil);
 
-})(window);
+})(window, chrome.storage.sync);
