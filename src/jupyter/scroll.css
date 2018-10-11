@@ -1,0 +1,5 @@
+.jp-scroll div.input_area,
+.jp-scroll div.output_subarea {
+    max-height: 500px;
+    overflow-y: auto;
+}

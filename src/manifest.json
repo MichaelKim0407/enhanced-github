@@ -23,10 +23,14 @@
                 "https://render.githubusercontent.com/view/ipynb?*"
             ],
             "all_frames": true,
+            "css": [
+                "jupyter/scroll.css"
+            ],
             "js": [
                 "lib/jquery-3.3.1/jquery.min.js",
                 "util.js",
-                "jupyter/table.js"
+                "jupyter/table.js",
+                "jupyter/scroll.js"
             ]
         }
     ]
