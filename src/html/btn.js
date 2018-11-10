@@ -1,9 +1,8 @@
 (function ($, util) {
-    const option = 'jp-view-btn';
+    const option = 'html-view-btn';
 
     function getUrl() {
-        var $iframe = $('.file iframe.render-viewer');
-        return $iframe.attr('src');
+        return "http://htmlpreview.github.io/?" + window.location;
     }
 
     function createViewBtn(url) {

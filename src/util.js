@@ -44,4 +44,14 @@
         };
     })(window.enhancedGithubUtil);
 
+    (function (util) {
+        function addActionButton(element, after) {
+            var $btnGroup = $('.file .file-header .file-actions .BtnGroup');
+            var $before = $btnGroup.find(after);
+            $(element).insertAfter($before);
+        }
+
+        util.addActionButton = addActionButton;
+    })(window.enhancedGithubUtil)
+
 })(window, chrome.storage.sync);
