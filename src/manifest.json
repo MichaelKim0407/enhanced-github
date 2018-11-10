@@ -9,11 +9,19 @@
     "content_scripts": [
         {
             "matches": [
-                "https://github.com/*.ipynb"
+                "https://github.com/*"
             ],
             "js": [
                 "lib/jquery-3.3.1/jquery.min.js",
                 "util.js",
+                "github/refresh.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://github.com/*.ipynb"
+            ],
+            "js": [
                 "jupyter/btn.js"
             ]
         },
@@ -38,8 +46,6 @@
                 "https://github.com/*.html"
             ],
             "js": [
-                "lib/jquery-3.3.1/jquery.min.js",
-                "util.js",
                 "html/btn.js"
             ]
         }
