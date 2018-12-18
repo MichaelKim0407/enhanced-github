@@ -1,0 +1,8 @@
+form.js-site-search-form > label > a.adv {
+    margin-right: 8px;
+    height: 20px;
+    line-height: 18px;
+    border: solid #636769 1px;
+    border-radius: 3px;
+    color: #8d9091;
+}

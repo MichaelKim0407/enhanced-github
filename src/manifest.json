@@ -48,6 +48,17 @@
             "js": [
                 "html/btn.js"
             ]
+        },
+        {
+            "matches": [
+                "https://github.com/*"
+            ],
+            "css": [
+                "search/bar.css"
+            ],
+            "js": [
+                "search/bar.js"
+            ]
         }
     ]
 }
