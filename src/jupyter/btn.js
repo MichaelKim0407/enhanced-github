@@ -18,7 +18,7 @@
         util.withOption(option, function () {
             util.addActionButton(
                 createViewBtn(getUrl()),
-                '#raw-url'
+                '#raw-url',
             );
         });
     });

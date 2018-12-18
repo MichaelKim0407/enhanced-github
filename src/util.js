@@ -52,6 +52,6 @@
         }
 
         util.addActionButton = addActionButton;
-    })(window.enhancedGithubUtil)
+    })(window.enhancedGithubUtil);
 
 })(window, chrome.storage.sync);

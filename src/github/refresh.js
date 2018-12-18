@@ -14,6 +14,6 @@
     $(function () {
         util.withOption(option, function () {
             setInterval(refresh, 100);
-        })
-    })
+        });
+    });
 })(window.jQuery, window.enhancedGithubUtil);

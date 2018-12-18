@@ -2,7 +2,7 @@
     const option = 'html-view-btn';
 
     function getUrl() {
-        return "http://htmlpreview.github.io/?" + window.location;
+        return 'http://htmlpreview.github.io/?' + window.location;
     }
 
     function createViewBtn(url) {
@@ -17,7 +17,7 @@
         util.withOption(option, function () {
             util.addActionButton(
                 createViewBtn(getUrl()),
-                '#raw-url'
+                '#raw-url',
             );
         });
     });
