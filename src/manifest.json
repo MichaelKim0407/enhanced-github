@@ -59,6 +59,15 @@
             "js": [
                 "search/bar.js"
             ]
+        },
+        {
+            "matches": [
+                "https://github.com/search/advanced",
+                "https://github.com/search/advanced?*"
+            ],
+            "js": [
+                "search/adv-commit.js"
+            ]
         }
     ]
 }
